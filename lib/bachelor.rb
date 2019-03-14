@@ -47,5 +47,5 @@ def get_average_age_for_season(data, season)
   end
   puts total_ages
   puts total_chicks
-  puts (total_ages.to_f/total_chicks.to_f).round
+  puts (total_ages.to_f/total_chicks.to_f).round(0)
 end
