@@ -45,7 +45,7 @@ def get_average_age_for_season(data, season)
     total_ages += (chick["age"]).to_i
     total_chicks += 1
   end
-  puts total_ages
-  puts total_chicks
-  puts (total_ages/total_chicks.to_f).ceil
+  #puts total_ages
+  #puts total_chicks
+  return (total_ages/total_chicks.to_f).ceil
 end
