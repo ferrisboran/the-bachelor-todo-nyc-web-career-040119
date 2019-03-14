@@ -45,5 +45,5 @@ def get_average_age_for_season(data, season)
     average_age += (chick["age"]).to_i
     i += 1
   end
-  return average_age / i
+  return (average_age / i).round(0)
 end
