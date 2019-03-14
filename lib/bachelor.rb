@@ -10,7 +10,7 @@ def get_contestant_name(data, occupation)
   data.each do |season, chick|
     chick.each do |key|
       if key["occupation"] == occupation
-        return chick["name"].split(" ").first
+        return key["name"].split(" ").first
       end
     end
   end
