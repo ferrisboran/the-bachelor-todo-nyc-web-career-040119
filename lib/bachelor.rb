@@ -40,10 +40,10 @@ end
 
 def get_average_age_for_season(data, season)
   average_age = 0
-  ages = []
+  i = 0
   data[season].each do |chick|
-    chick.each do |key, value|
-      puts key["age"][value]
-    end
+    average_age += (chick["age"]).to_i
+    i += 1
   end
+  return average_age / i
 end
